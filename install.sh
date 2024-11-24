@@ -26,7 +26,7 @@ chmod +x "$BINARY_PATH"
 
 # Move the binary to /usr/local/bin
 echo "Moving $BINARY_PATH to $DESTINATION..."
-mv "$BINARY_PATH" "$DESTINATION"
+sudo mv "$BINARY_PATH" "$DESTINATION"
 if [[ $? -eq 0 ]]; then
   echo "$BINARY_PATH successfully installed to $DESTINATION."
 else
